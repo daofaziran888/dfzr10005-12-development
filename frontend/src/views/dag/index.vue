@@ -70,7 +70,7 @@ import { request } from '@/api/client'
 type Row = Record<string, string | number | null>
 
 const ENDPOINT = '/api/dag'
-const columns = ["节点编号", "节点名称", "上游节点", "下游节点", "执行条件", "超时分钟", "失败策略", "节点状态"]
+const columns = ["节点编号", "节点名称", "上游节点", "下游节点", "执行条件", "超时分钟", "失败策略", "节点状态", "告警来源路径"]
 const actions = ["启动节点", "暂停节点", "归档节点"]
 const statuses = ["草稿", "运行中", "已暂停", "已完成"]
 const stats = [{"label": "依赖图节点总数", "value": 0}, {"label": "运行中节点", "value": 0}, {"label": "已暂停节点", "value": 0}]

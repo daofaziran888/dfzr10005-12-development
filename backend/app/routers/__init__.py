@@ -11,6 +11,7 @@ from app.routers import cost as router_cost
 from app.routers import heatmap as router_heatmap
 from app.routers import dag as router_dag
 from app.routers import sla as router_sla
+from app.routers import sla_risk as router_sla_risk
 from app.routers import resource as router_resource
 from app.routers import score as router_score
 from app.routers import drift as router_drift
@@ -23,4 +24,4 @@ from app.routers import recycle as router_recycle
 from app.routers import audit as router_audit
 from app.routers import benchmark as router_benchmark
 
-ROUTERS = [router_lifecycle, router_cost, router_heatmap, router_dag, router_sla, router_resource, router_score, router_drift, router_catalog, router_retention, router_dedup, router_tier, router_baseline, router_recycle, router_audit, router_benchmark]
+ROUTERS = [router_lifecycle, router_cost, router_heatmap, router_dag, router_sla_risk, router_sla, router_resource, router_score, router_drift, router_catalog, router_retention, router_dedup, router_tier, router_baseline, router_recycle, router_audit, router_benchmark]

@@ -70,7 +70,7 @@ import { request } from '@/api/client'
 type Row = Record<string, string | number | null>
 
 const ENDPOINT = '/api/baseline'
-const columns = ["基线编号", "基线名称", "承诺时间", "预警时间", "关键路径", "依赖范围", "监控状态", "最近产出"]
+const columns = ["基线编号", "基线名称", "监控对象", "承诺时间", "预警时间", "关键路径", "依赖范围", "监控状态", "最近产出", "风险窗口", "处置结论"]
 const actions = ["启用监控", "调整基线", "关闭基线"]
 const statuses = ["草稿", "监控中", "已延期", "已关闭"]
 const stats = [{"label": "基线配置总数", "value": 0}, {"label": "监控中基线", "value": 0}, {"label": "已延期基线", "value": 0}]
